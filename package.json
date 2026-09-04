@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "a2-evelynyee",
   "version": "",
   "description": "",
-  "author": "",
+  "author": "Evelyn Yee",
   "scripts": {
     "start": "node server.js"
   },
