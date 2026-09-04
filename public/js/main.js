@@ -32,7 +32,7 @@ const submit = async function (event) {
 };
 
 window.onload = function () {
-  const button = document.querySelector("submit");
+  const button = document.querySelector("#submit");
   button.onclick = submit;
   getData();
 };
