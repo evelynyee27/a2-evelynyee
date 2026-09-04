@@ -1,18 +1,72 @@
 <!doctype html>
-<html lang='en'>
-  <head>
-    <title>CS4241 Assignment 2</title>
-    <meta charset='utf-8' />
-    <script src='js/main.js'></script>
-    <link rel='stylesheet' href='css/main.css' />
-    
-    <!-- get rid of favicon error -->
-    <link rel='icon' href='data:;base64,iVBORw0KGgo=' />
-  </head>
-  <body>
-    <form>
-      <input type='text' id='yourname' value='your name here'>
-      <button>submit</button>
-    </form>
-  </body>
+<html lang="en">
+
+<head>
+  <title>CS4241 Assignment 2</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- get rid of favicon error -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+</head>
+
+<body>
+
+  <div id="container">
+
+    <div class="col1">
+      <form id="submitForm" method="POST">
+        <span>leave a new note...</span>
+        <p>
+          <label for="title">title:</label>
+          <input type="text" id="title" value="title" />
+        </p>
+
+        <p>
+          <label for="message">message:</label>
+          <textarea id="message" value="message"></textarea>
+        </p>
+
+        <p>
+          <label for="status">status:</label>
+          <select id="status">
+            <option value="incomplete">incomplete</option>
+            <option value="complete">complete</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="due">due:</label>
+          <input type="date" id="due"></input>
+        </p>
+
+        <button id="submit">submit</button>
+      </form>
+    </div>
+
+    <div class="col1">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>title</th>
+            <th class="wideButton">message</th>
+            <th>status</th>
+            <th class="wideButton">due</th>
+            <th>important?</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+
+    <div id="melody">
+      <img src="images/strawberry.png" alt="MyMelody holding a strawberry">
+    </div>
+  </div>
+</body>
+
 </html>
